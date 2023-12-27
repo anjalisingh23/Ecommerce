@@ -1,0 +1,25 @@
+.description_container{
+    margin: 1rem 2rem;
+
+    .description_navigator{
+        display: flex;
+
+        div{
+            padding: 1rem 2rem;
+           font-weight: bold;
+           cursor: pointer;
+            box-shadow: 0px 4px 5px rgba(0,0,0,0.4);
+            transition: scale 0.4s ease-in-out;
+
+            &:hover{
+                scale:.98;
+                transition: scale 0.4s ease-in-out;
+            }
+        }
+    }
+    .descriptionBox_des{
+        margin: 0rem;
+        padding:2rem;
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.5);
+    }
+}

@@ -1,0 +1,103 @@
+.offers_container {
+  width: 65vw;
+  min-height: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem auto;
+  padding: 1rem 5rem;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+
+  .offer_left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1 {
+      color: #171717;
+
+      @media (max-width: 900px) {
+        width: 100%;
+        display: inline;
+      }
+    }
+    p {
+      color: #171717;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-top: 0.5rem;
+    }
+    button {
+      margin: 1rem auto;
+      margin-left: 2.5rem;
+      justify-content: flex-start;
+      padding: 1rem 2rem;
+      outline: none;
+      border: none;
+      font-size: 18px;
+      letter-spacing: 1.2px;
+      font-weight: 550;
+      background-color: #ff4141;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: #5c5c5c;
+        transition: all 0.5s ease-in-out;
+      }
+      @media (max-width: 900px) {
+        padding: 0.6rem 1rem;
+        margin: 1rem auto;
+      }
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem auto;
+    }
+  }
+  .offer_right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 300px;
+
+      @media screen and (max-width: 900px) {
+        width: 250px;
+      }
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 900px) {
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  }
+}

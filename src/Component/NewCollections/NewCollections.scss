@@ -1,0 +1,82 @@
+.newCollection_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 70vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin: auto;
+
+  h1 {
+    color: #171717;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1rem auto;
+
+    &::after {
+      content: "";
+      height: 4px;
+      width: 200px;
+      background: #171717;
+      display: block;
+      margin: auto;
+      border-radius: 4px;
+      transition: width 0.4s ease-in-out;
+
+      @media (max-width:900px){
+        width: 100px;
+        height: 3px;
+      }
+    }
+    &:hover::after {
+      width: 100%;
+      transition: width 0.4s ease-in-out;
+    }
+
+    @media (max-width: 900px) {
+      font-size: 1rem;
+      font-weight: 550;
+    }
+  }
+  .popular_items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    margin: 1rem auto;
+  }
+
+  .collections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0.5rem auto;
+
+    @media (max-width:900px){
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      width: 100%;
+    }
+    @media (max-width:500px){
+   position: relative;
+   left:50%;
+   transform: translateX(-50%);
+   margin: auto;
+
+    }
+  }
+
+  @media (max-width:500px){
+   
+    display: grid;
+    place-items: center;
+  }
+}
